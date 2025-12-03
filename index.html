@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REDCORE Security – Cyber Defense Landing</title>
+
+    <!-- Google Fonts: Orbitron -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="animations.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="theme-dark">
+
+    <!-- Лёгкий шум по фону -->
+    <div class="noise-overlay"></div>
+
+    <header class="header">
+        <div class="header__inner">
+            <div class="brand">
+                <span class="brand__dot"></span>
+                <span class="brand__name">REDCORE</span>
+                <span class="brand__tag">SECURITY</span>
+            </div>
+
+            <nav class="nav">
+                <a href="#hero" class="nav__link" data-i18n="nav.home">Главная</a>
+                <a href="#services" class="nav__link" data-i18n="nav.services">Услуги</a>
+                <a href="#process" class="nav__link" data-i18n="nav.process">Процесс</a>
+                <a href="#contact" class="nav__link" data-i18n="nav.contact">Контакт</a>
+            </nav>
+
+            <div class="header__controls">
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="sv">SV</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="hero" class="hero">
+            <div class="hero__grid">
+                <div class="hero__content">
+                    <p class="hero__badge" data-i18n="hero.badge">
+                        Киберзащита нового поколения
+                    </p>
+                    <h1 class="hero__title glitch" data-i18n="hero.title">
+                        Мы держим тёмную сеть под контролем
+                    </h1>
+                    <p class="hero__subtitle" data-i18n="hero.subtitle">
+                        REDCORE Security тестирует системы на взлом до того, как это сделают настоящие хакеры.
+                        Без страха, без паники, без цен – только чистая кибербезопасность.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a href="#contact" class="btn btn--primary" data-i18n="hero.cta_primary">
+                            Запросить бесплатный анализ риска
+                        </a>
+                        <a href="#services" class="btn btn--ghost" data-i18n="hero.cta_secondary">
+                            Смотреть, что мы защищаем
+                        </a>
+                    </div>
+
+                    <div class="hero__meta">
+                        <span data-i18n="hero.meta_1">24/7 мониторинг</span>
+                        <span data-i18n="hero.meta_2">Red Team симуляции атак</span>
+                        <span data-i18n="hero.meta_3">Отчёты понятным языком</span>
+                    </div>
+                </div>
+
+                <div class="hero__visual">
+                    <div class="core-orbit">
+                        <div class="core-orbit__ring core-orbit__ring--outer"></div>
+                        <div class="core-orbit__ring core-orbit__ring--inner"></div>
+                        <div class="core-orbit__core"></div>
+                        <div class="core-orbit__pulse"></div>
+                    </div>
+                    <p class="hero__holo" data-i18n="hero.holo">
+                        Визуальный “ядро” сети. Красное ядро – угрозы, серые орбиты – уровни защиты.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="section section--pad">
+            <div class="section__header">
+                <p class="section__eyebrow" data-i18n="services.eyebrow">
+                    Что именно мы берём под щит
+                </p>
+                <h2 class="section__title" data-i18n="services.title">
+                    Киберзащита без прайсов и маркетинга
+                </h2>
+                <p class="section__subtitle" data-i18n="services.subtitle">
+                    Мы не пишем цены на сайте. Вместо этого – реальные сценарии угроз и то, как мы их гасим.
+                </p>
+            </div>
+
+            <div class="cards-grid">
+                <article class="card card--service">
+                    <h3 class="card__title" data-i18n="services.card1_title">
+                        Red Team &amp; Pen-test
+                    </h3>
+                    <p class="card__text" data-i18n="services.card1_text">
+                        Имитация реальных атак на вашу инфраструктуру. Мы ломаем ваши системы, чтобы увидеть,
+                        как и где их смогут сломать другие.
+                    </p>
+                    <ul class="card__list">
+                        <li data-i18n="services.card1_li1">Атаки на веб-приложения и API</li>
+                        <li data-i18n="services.card1_li2">Проверка паролей и прав доступа</li>
+                        <li data-i18n="services.card1_li3">Подробная карта найденных дыр</li>
+                    </ul>
+                </article>
+
+                <article class="card card--service">
+                    <h3 class="card__title" data-i18n="services.card2_title">
+                        24/7 мониторинг &amp; алерты
+                    </h3>
+                    <p class="card__text" data-i18n="services.card2_text">
+                        Наблюдаем за логами, сетью и ключевыми системами, чтобы странное поведение не оставалось
+                        незамеченным.
+                    </p>
+                    <ul class="card__list">
+                        <li data-i18n="services.card2_li1">Раннее обнаружение аномалий</li>
+                        <li data-i18n="services.card2_li2">Тонкая настройка уведомлений</li>
+                        <li data-i18n="services.card2_li3">Чёткие шаги “что делать сейчас”</li>
+                    </ul>
+                </article>
+
+                <article class="card card--service">
+                    <h3 class="card__title" data-i18n="services.card3_title">
+                        Обучение команды
+                    </h3>
+                    <p class="card__text" data-i18n="services.card3_text">
+                        Безопасность ломается там, где человек устал или не понял. Мы объясняем без сложных терминов.
+                    </p>
+                    <ul class="card__list">
+                        <li data-i18n="services.card3_li1">Фишинг-симуляции и разбор ошибок</li>
+                        <li data-i18n="services.card3_li2">Мини-воркшопы по безопасным привычкам</li>
+                        <li data-i18n="services.card3_li3">Материалы на простом языке</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- PROCESS -->
+        <section id="process" class="section section--pad section--alt">
+            <div class="section__header">
+                <p class="section__eyebrow" data-i18n="process.eyebrow">
+                    Как мы заходим в вашу систему
+                </p>
+                <h2 class="section__title" data-i18n="process.title">
+                    Четыре шага, без лишнего шума
+                </h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline__item">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <h3 data-i18n="process.step1_title">01. Короткий созвон</h3>
+                        <p data-i18n="process.step1_text">
+                            Вы рассказываете, что хотите защищать: сайт, внутреннюю сеть, клиентов, данные.
+                            Мы не просим технарский язык – переводим сами.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline__item">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <h3 data-i18n="process.step2_title">02. Карта угроз</h3>
+                        <p data-i18n="process.step2_text">
+                            Составляем список реальных сценариев атак под ваш бизнес, а не список “модных” слов.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline__item">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <h3 data-i18n="process.step3_title">03. Тест &amp; мониторинг</h3>
+                        <p data-i18n="process.step3_text">
+                            Запускаем согласованные проверки и наблюдаем за сетью. Ничего не ломаем без
+                            вашего письменного “да”.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline__item">
+                    <div class="timeline__dot"></div>
+                    <div class="timeline__content">
+                        <h3 data-i18n="process.step4_title">04. Отчёт, который можно понять</h3>
+                        <p data-i18n="process.step4_text">
+                            Вы получаете отчёт: где дыра, насколько больно, что делать в первую, вторую и третью
+                            очередь.
+                            Без расценок, без навязывания.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section section--pad">
+            <div class="section__header">
+                <p class="section__eyebrow" data-i18n="contact.eyebrow">
+                    Начать без обязательств
+                </p>
+                <h2 class="section__title" data-i18n="contact.title">
+                    Запросите анализ риска в один шаг
+                </h2>
+                <p class="section__subtitle" data-i18n="contact.subtitle">
+                    Напишите, какую часть инфраструктуры боитесь потерять. Мы вернёмся с вопросами и вариантами,
+                    но без коммерческого предложения в первом письме.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <form class="contact-form">
+                    <label class="field">
+                        <span class="field__label" data-i18n="contact.name_label">Имя / команда</span>
+                        <input type="text" name="name" placeholder="" required />
+                    </label>
+
+                    <label class="field">
+                        <span class="field__label" data-i18n="contact.email_label">Рабочий e-mail</span>
+                        <input type="email" name="email" required />
+                    </label>
+
+                    <label class="field">
+                        <span class="field__label" data-i18n="contact.scope_label">Что нужно защитить</span>
+                        <textarea name="scope" rows="4" required></textarea>
+                    </label>
+
+                    <p class="contact__hint" data-i18n="contact.hint">
+                        Форму отправлять не обязательно – это демонстрационный лендинг для портфолио.
+                    </p>
+
+                    <button type="submit" class="btn btn--primary" data-i18n="contact.cta">
+                        Отправить запрос
+                    </button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="contact-chip">
+                        <span class="chip__label" data-i18n="contact.chip1_label">
+                            Формат
+                        </span>
+                        <p class="chip__text" data-i18n="contact.chip1_text">
+                            Онлайн-созвон 20–30 минут, без камеры по желанию.
+                        </p>
+                    </div>
+
+                    <div class="contact-chip">
+                        <span class="chip__label" data-i18n="contact.chip2_label">
+                            Языки
+                        </span>
+                        <p class="chip__text" data-i18n="contact.chip2_text">
+                            Русский, английский, шведский – так же, как и интерфейс страницы.
+                        </p>
+                    </div>
+
+                    <div class="contact-chip">
+                        <span class="chip__label" data-i18n="contact.chip3_label">
+                            Для портфолио
+                        </span>
+                        <p class="chip__text" data-i18n="contact.chip3_text">
+                            Этот сайт – демонстрационный проект. Текст и эффекты можно адаптировать под реального
+                            клиента.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <img src="logo-vs.svg" alt="VS LiteCode Studio logo" class="footer-logo glow-logo" />
+                <div>
+                    <p class="footer__title">VS LiteCode Studio</p>
+                    <p class="footer__subtitle" data-i18n="footer.subtitle">
+                        Дизайн и код в одном неоновом ядре.
+                    </p>
+                </div>
+            </div>
+
+            <p class="footer__copy">
+                © <span id="year"></span> REDCORE Security · Demo landing for portfolio.
+            </p>
+        </div>
+
+        <button class="scroll-top" aria-label="Scroll to top">▲</button>
+    </footer>
+
+    <!-- JS -->
+    <script src="lang.js"></script>
+    <script src="effects.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
